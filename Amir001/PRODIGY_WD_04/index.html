@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="left">Amir Sohel</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/"> Home </a></li>
+                    <li><a href="/"> About </a></li>
+                    <li><a href="/"> Projects </a></li>
+                    <li><a href="/"> Contact </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <h1><span id="element"></span> </h1>
+                <p> Transforming Ideas into Seamless<br> Web Experiences, One Line of Code at a Time </p>
+
+            </div>
+            <div class="rightsection">
+                <img src="myimg.jpeg">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <img src="Myskill.jpg" alt="">
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="left-footer">
+                <p>Copyright &#169; 2023 amirSohelportfolio.com . All Rights Reserved.</p>
+                <p> email : factt123@gmain.com </p>               
+            </div>
+            <div class="right-footer">
+                <a href="https://www.linkedin.com/in/amir-sohel-8949b9285/" target="_blank" id="linkedin"> <img src="Linkedin.jpg" alt="LinkedIn"> </a>
+                <a href="https://github.com/AmirSohel1" target="_blank" id="github"> <img src="github.jpeg" alt=""> </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JAVASCRIPT FOR ...... -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+
+        var typed = new Typed('#element', {
+            strings: ["Hi, I'm Amir"],
+            typeSpeed: 60,
+        });
+
+        const box = document.querySelector('.navbar');
+
+        function getRandomRGB() {
+            const r = Math.floor(Math.random() * 256);
+            const g = Math.floor(Math.random() * 256);
+            const b = Math.floor(Math.random() * 256);
+            return `rgba(${r}, ${g}, ${b}, 0.7)`;
+        }
+
+        function changeShadowColor() {
+            const newColor = getRandomRGB();
+            box.style.boxShadow = `0 0 70px ${newColor}`;
+        }
+
+        setInterval(changeShadowColor, 2000); // Change color every 2 seconds
+
+    </script>
+</body>
+
+</html>

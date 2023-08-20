@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #100f0f;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* STYLE FOR NAVBAR */
+.navbar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #545355;
+    color: rgb(221, 231, 240);
+    box-shadow: 0 0 70px rgba(21, 55, 224, 0.7);
+    transition: box-shadow 0.7s ease-in-out;
+
+}
+
+.right>ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.right>ul>li {
+    margin: 0 35px;
+}
+
+.right>ul>li>a {
+    text-decoration: none;
+    color: rgb(221, 231, 240);
+}
+
+.right>ul>li>a:hover {
+    color: rgb(152, 152, 231);
+    font-size: 1.03rem;
+}
+
+
+/* STYLE FOR FIRSTSECTION */
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+}
+
+.leftsection {
+    color: rgb(185, 189, 236);
+    margin-top: 8%;
+    text-align: center;
+}
+
+.leftsection>h1 {
+    font-size: 3rem;
+}
+
+.leftsection>h1>span {
+    color: #02bcac;
+    font-weight: 800;
+}
+
+.leftsection>p {
+    margin-top: 3%;
+    font-size: 2rem;
+}
+
+hr {
+    margin: 5% 0;
+    border: 1px solid rgb(133, 137, 156);
+}
+
+/* Style for secondsection */
+
+.secondsection>img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style for footer */
+
+footer {
+    background: #393839;
+}
+
+footer .container {
+    text-align: center;
+    padding: 59px 0;
+}
+footer > .container > .left-footer > p {
+    color: #c1dad8;
+    margin: 15px 0;
+} 
+
+footer .container img {
+    margin: 0 15px;
+    height: 70px;
+    width: 70px;
+}
